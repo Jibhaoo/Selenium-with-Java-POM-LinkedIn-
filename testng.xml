@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="tests" thread-count="1" verbose="2">
+
+
+					<test name="Test on Web- li">
+						<parameter name="deviceName" value="Windows" />
+						<parameter name="os" value="Windows" />
+						<parameter name="platform" value="Windows "/>
+						<classes>
+                            <class name="test.LITest.LinkedInTest" />
+						</classes>
+					</test>
+
+</suite>

@@ -1,0 +1,10 @@
+/target/
+/allure-report
+/allure-results
+/Reports
+/screenshots
+/test-output
+.idea/
+Loginfo.log
+Extent.html
+unnamed.patch
