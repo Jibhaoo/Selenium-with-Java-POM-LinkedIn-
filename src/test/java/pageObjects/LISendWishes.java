@@ -40,13 +40,7 @@ public class LISendWishes<WebElements> {
 		utils.logINFO("Navigating to Catch Up");
 		driver.navigate().to("https://www.linkedin.com/mynetwork/catch-up/all/");
 
-		try {
-			Thread.sleep(5000);
-		}
-		catch (Exception e)
-		{
 
-		}
 		int wishessize = wishes.size();
 		if(wishessize<=0)
 		{
@@ -70,13 +64,12 @@ public class LISendWishes<WebElements> {
 			int i=0;
 			for (WebElement wsh : wishes)
 			{
-				Thread.sleep(5000);
+
 				//utils.scrollIntoView(wishes.get(i));
 				if (wsh.isDisplayed()) {
 
 						utils.logINFO("Clicking on Wishes");
 						utils.isElementPresentAndClick(wsh);
-						Thread.sleep(5000);
 						utils.logINFO("Clicking on Send button");
 						utils.isElementPresentAndClick(sendbutton);
 						utils.logINFO("Clicking on Close button");
